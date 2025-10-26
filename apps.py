@@ -32,7 +32,7 @@ sun_time = st.sidebar.slider("Sun time (hours)", 0, 12, 12)
 
 # --- API KEY SECTION ---
 # Per your request, the sidebar header is removed and the key is left as is.
-API_KEY = "AIzaSyCERnBxx4fw_0RoVr6b7HnyR0QvkDlNypk"
+API_KEY = ""
 
 GEMINI_READY = False
 model = None
@@ -394,4 +394,5 @@ elif active_tab == "AI Recommendations":
         # Always display the recommendation if it exists in the session state
         # This makes it reappear after the button-click re-run
         if 'ai_recommendation' in st.session_state:
+
             st.markdown(st.session_state.ai_recommendation)
